@@ -9,12 +9,24 @@
 <body>
     <div>
         <div>
-                <img src="assests/images/logo.png" alt="logo" height="150px" width="200px">
-                <a href="login.html" target="_blank">Login</a>
+            <a href="index.html"> <img src="assests/images/logo.png" alt="logo" height="150px" width="200px"></a>
+            <a href="login.html">Login</a>
         </div>
         <div>
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson"><br>
-                <a href="payment.html">Book Now</a>
+                <form action="payment.html" method="GET" autocomplete="off">
+                    <lable>Adults:</lable>
+                    <input type="number" name="adult" min="1" required="Value must be greater than or equal to 1"><br>
+                    <label>Name:</label>
+                    <input type="text" name="name" required><br>
+                    <label>From Date</label>
+                    <input type="date" name="fromdate" required><br>
+                    <label>To Date</label>
+                    <input type="date" name="todate" required><br>  
+                    <label>Total:</label>
+                    <input type="" name="price" disabled><br>
+                    <input type="submit" value="Book Now">
+                </form>
                 <h2>Radisson Blu Hotel</h2>
                 <p>RATING</p>
                 <p>5 Star</p>
@@ -33,7 +45,7 @@
         </div>
         
         <div>
-                <a href="contact.html" target="_blank">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
                 <div>
                 <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" height="20px" width="22px" alt="fb"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" height="20px" width="22px" alt="insta"></a>
