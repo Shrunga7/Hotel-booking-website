@@ -1,0 +1,21 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    height: 100%;
+    width: 100%;
+}
+#list-view img{
+    height: 200px;
+    width: 250px;
+
+}
+footer img{
+        height:20px;
+        width: 22px;
+}
+header img{
+    height:60px;
+    width:60px;
+}
