@@ -1,6 +1,8 @@
 body{
     height: 100%;
     width: 100%;
+    margin: 0%;
+    background-color: #e0e0e0;
 }
 #container{
     height: 100%;
@@ -14,7 +16,26 @@ header img{
     height:60px;
      width:60px;
 }
+header, footer{
+    background-color: rosybrown;
+}
 header + div img{
     height: 500px;
      width:500px;
+}
+div#hotels{
+    background-color: rgb(132,136,139);
+    width:50%;
+    height:20%;
+    margin: 2% auto 2% auto;
+}
+div#customerdetails{
+    margin: 2%;
+}
+
+div#tariff{
+    margin:2%;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding:1% 2% 1% 2%;
 }

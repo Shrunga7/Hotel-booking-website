@@ -1,6 +1,8 @@
 body{
     height: 100%;
     width: 100%;
+    margin: 0%;
+    background-color: #e0e0e0;
 }
 #container{
     height: 100%;
@@ -13,8 +15,19 @@ header img{
 header + div img{
     height: 500px;
      width:500px;
+     margin: 2% 4% 0% 4%;
+}
+header + div form{
+    margin: 0% 4% 1% 4%;
+}
+header + div div{
+    margin:1% 4% 2% 4%;
 }
 footer img{
         height:20px;
         width: 22px;
-    }
+}
+header,footer{
+    background-color: rosybrown;
+}
+
