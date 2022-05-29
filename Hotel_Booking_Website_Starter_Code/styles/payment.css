@@ -8,20 +8,28 @@ body{
     height: 100%;
     width: 100%;
 }
-footer img{
-    height:20px;
-    width: 22px;
+header{
+    background-color: rosybrown;
+    position:sticky; top:0px; left:0px; right:0px; overflow:hidden;
+
 }
+header a:nth-of-type(2) {
+    text-decoration: none;
+    color: black; 
+    float: right;
+    margin:19.5px;
+} 
 header img{
     height:60px;
      width:60px;
 }
-header, footer{
-    background-color: rosybrown;
-}
 header + div img{
     height: 500px;
      width:500px;
+}
+header + div a{
+    text-decoration: none;
+    color: black;
 }
 div#hotels{
     background-color: rgb(132,136,139);
@@ -38,4 +46,25 @@ div#tariff{
    border: 1px solid black;
    border-radius: 5px;
    padding:1% 2% 1% 2%;
+}
+footer{
+    background-color: rosybrown;
+    position:sticky; bottom:0px; left:0px; right:0px; overflow: hidden;
+    padding-left: 10px;
+    padding-right:10px;
+}
+footer div div{
+    float:right;
+}
+footer div a:nth-of-type(1){
+    text-decoration: none;
+    color:black;
+}
+footer img{
+    height:20px;
+    width: 22px;
+}
+footer footer{
+    text-align: center;
+    margin-bottom:0;
 }

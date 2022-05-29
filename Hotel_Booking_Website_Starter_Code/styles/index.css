@@ -2,6 +2,7 @@ html{
     height: 100%;
     width: 100%;
     margin:0%;
+    font-family: 'Ubuntu', sans-serif;
 }
 body{
     height: 100%;
@@ -9,41 +10,89 @@ body{
     margin:0%;
     background-color: #e0e0e0;
 }
-div form{
+#container{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background-color: rosybrown;
+    position:sticky; top:0px; left:0px; right:0px; overflow:hidden;
+
+}
+ header img{
+    height:60px;
+     width:60px;
+     vertical-align: middle;
+ }
+header a {
+    text-decoration: none;
+    color: black; 
+    float: right;
+    margin:19.5px;
+} 
+header + div {
     background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    height:480px;
-    
+    height:380px;
+    display:flex; 
 }
-#container{
-    height: 100%;
+div form{
+    margin: auto;
+       
+}
+ div form input{
+    background-color:#f1f1f1;
+    border: 1px solid transparent;
+    padding:10px;
+    font-size: 16px;
+    border-radius: 12px;
     width: 100%;
-}
-header{
-    background-color: rosybrown;
-}
-footer{
-    background-color: rosybrown;
-}
-header img{
-    height:60px;
-     width:60px;
 }
 div ~ div img{
     height:150px;
      width:150px;
      padding:4%;
-     border-radius:25%;
-     
+     border-radius:25%;    
+
 }
 div ~ div{
     margin-left:15%;
     margin-right:15%;
+   
+    
 }
-footer img{
+div + p{
+    text-align: center;
+}
+div + p a{
+    text-decoration: none;
+    color:black;
+}
+footer{
+    background-color: rosybrown;
+    position:sticky; bottom:0px; left:0px; right:0px; overflow:hidden;
+     padding-left: 10px;
+    padding-right:10px;
+    
+}
+footer div div img{
         height:20px;
-        width: 22px;
+        width:22px;
     }
+    footer div div {
+        float:right; 
+        
+    }
+footer a:nth-of-type(1){
+    text-decoration: none;
+    color:black;
+     
+}
+footer footer{
+       text-align: center;
+       margin-bottom:0;
+}
