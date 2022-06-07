@@ -1,60 +1,68 @@
-body{
-    height: 100%;
-    width: 100%;
-    margin: 0%;
-    background-color: #e0e0e0;
+.hotel{
+    display: flex;
 }
-#container{
-    height: 100%;
-    width: 100%;
+.hotel-img{
+    display:flex;
+    border: 1px solid black;
+    height: 400px;
+    width:60%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: -1px;
 }
-header{
-    background-color: rosybrown;
-    position:sticky; top:0px; left:0px; right:0px; overflow:hidden;
+.hotel-img img{
+   
+    height: 350px;
+    width:500px; 
+     /* margin: 2% 4% 0% 4%; */
+}
+.hotel-detail {
+    display: flex;
+    border: 1px solid black;
+    border-left:1px solid transparent;
+    width: 40%;
+    height: 400px;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: -1px;
+    justify-content: center;
+    align-items: center; 
+     
+}
+label{
+    width: 250px;
+    /* display: inline-block;
+    float: left; */
+    text-align: left;
+}
+input{
+    display: inline-block;
+    width: 60%;
+    
 
 }
-header img{
-    height:60px;
-     width:60px;
-}
-header a:nth-of-type(2) {
-    text-decoration: none;
-    color: black; 
-    float: right;
-    margin:19.5px;
-} 
-header + div img{
-    height: 500px;
-     width:500px;
-     margin: 2% 4% 0% 4%;
-}
-header + div form{
-    margin: 0% 4% 1% 4%;
-}
-header + div div{
-    margin:1% 4% 2% 4%;
-}
-footer img{
-        height:20px;
-        width: 22px;
-}
-footer{
-    background-color: rosybrown;
-    position:sticky; bottom:0px; left:0px; right:0px; overflow: hidden;
-    padding-left: 10px;
-    padding-right:10px;
-}
-footer div div{
-    float:right;
-}
-footer div a:nth-of-type(1){
-    text-decoration: none;
-    color:black;
-}
-footer footer{
+form p{
+    display: flex;
     text-align: center;
-    margin-bottom:0;
+    margin: 10% auto;
 }
+.info{
+    margin:1% 4% 2% 2%;
+    
+}
+h5{
+    font-family: cursive;
+}
+input[type="submit"]{
+    padding:5px;
+    width:80px;
+    margin-right:34%;
+}
+
+
+
 
 
 

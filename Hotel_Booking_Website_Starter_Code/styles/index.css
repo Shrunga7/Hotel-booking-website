@@ -1,37 +1,4 @@
-html{
-    height: 100%;
-    width: 100%;
-    margin:0%;
-    font-family: 'Ubuntu', sans-serif;
-}
-body{
-    height: 100%;
-    width: 100%;
-    margin:0%;
-    background-color: #e0e0e0;
-}
-#container{
-    height: 100%;
-    width: 100%;
-}
-
-header{
-    background-color: rosybrown;
-    position:sticky; top:0px; left:0px; right:0px; overflow:hidden;
-
-}
- header img{
-    height:60px;
-     width:60px;
-     vertical-align: middle;
- }
-header a {
-    text-decoration: none;
-    color: black; 
-    float: right;
-    margin:19.5px;
-} 
-header + div {
+div .searchbar {
     background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +7,7 @@ header + div {
     height:380px;
     display:flex; 
 }
-div form{
+form{
     margin: auto;
        
 }
@@ -51,19 +18,52 @@ div form{
     font-size: 16px;
     border-radius: 12px;
     width: 100%;
+    border: none;
+    outline: none;
 }
-div ~ div img{
-    height:150px;
-     width:150px;
-     padding:4%;
-     border-radius:25%;    
+div .cards{
+    /* margin-left: 15%;
+    margin-right: 15%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 
 }
-div ~ div{
-    margin-left:15%;
-    margin-right:15%;
-   
+.cards .card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+
+}
+.cards .card img{
+    display: block;
+    border-radius:25%;
+    height: 150px;
+    width: 150px;
+}
+.cards .card .mid{
+    position: absolute; 
+    opacity: -1;
+    margin: auto;
     
+}
+.mid .txt{
+    color:#f1f1f1;
+    margin:auto;
+}
+.cards .card:hover .mid{
+    opacity: 1;
+}
+.cards .card:hover .image{
+     filter:brightness(50%); 
+     background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.cards .card .image{
+    box-shadow: 10px 10px 10px grey;
 }
 div + p{
     text-align: center;
@@ -71,28 +71,5 @@ div + p{
 div + p a{
     text-decoration: none;
     color:black;
-}
-footer{
-    background-color: rosybrown;
-    position:sticky; bottom:0px; left:0px; right:0px; overflow:hidden;
-     padding-left: 10px;
-    padding-right:10px;
-    
-}
-footer div div img{
-        height:20px;
-        width:22px;
-    }
-    footer div div {
-        float:right; 
-        
-    }
-footer a:nth-of-type(1){
-    text-decoration: none;
-    color:black;
-     
-}
-footer footer{
-       text-align: center;
-       margin-bottom:0;
+
 }

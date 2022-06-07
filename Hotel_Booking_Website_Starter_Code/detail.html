@@ -5,61 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Detail</title>
-    <link href="styles\detail.css" rel="stylesheet">
+    <link href="styles/detail.css" rel="stylesheet">
+    <link href="styles/common.css" rel="stylesheet">
 </head>
 <body>
     <div id="container">
         <header>
-            <div>
-            <a href="index.html"> <img src="assests/images/logo.png" alt="logo"></a>
-            <a href="login.html">Login</a>
-            </div>
+            <nav>
+                <img src="assests/images/logo.png" alt="logo">
+                <div class="anchor">
+                    <a href="login.html">Login</a>
+                </div>
+            </nav>
         </header>
         <div>
-
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson"><br>
-                <form action="payment.html" method="GET" autocomplete="off">
-                    <lable>Adults:</lable>
-                    <input type="number" name="adult" min="1" required="Value must be greater than or equal to 1"><br>
-                    <label>Name:</label>
-                    <input type="text" name="name" required><br>
-                    <label>From Date</label>
-                    <input type="date" name="fromdate" required><br>
-                    <label>To Date</label>
-                    <input type="date" name="todate" required><br>  
-                    <label>Total:</label>
-                    <input type="" name="price" readonly><br>
-                    <input type="submit" value="Book Now">
-                </form>
-            <div>
+            <div class="hotel">
+                <div class="hotel-img">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson">
+                </div>
+                <div class="hotel-detail">
+                    <form action="payment.html" method="GET" autocomplete="off">
+                        <p>
+                            <label>Adults:</label>
+                            <input type="number" name="adult" min="1" required="Value must be greater than or equal to 1">
+                        </p>
+                        <p>
+                            <label>Name:</label>
+                            <input type="text" name="name" required>
+                        </p>
+                        <p>
+                            <label>From Date:</label>
+                            <input type="date" name="fromdate" required>
+                        </p>
+                        <p>
+                            <label>To Date:</label>
+                            <input type="date" name="todate" required>
+                        </p>
+                        <p>
+                            <label>Total:</label>
+                            <input type="text" name="price" readonly>
+                        </p>
+                        <p>
+                            <label></label>
+                            <input type="submit" value="Book Now">
+                        </p> 
+                        </form>
+                <!-- </div> -->
+                </div>
+            </div>
+            <div class="info">
                 <h2>Radisson Blu Hotel</h2>
-                <p>RATING</p>
+                <h5>RATING</h5>
                 <p>5 Star</p>
-                <p>AMENITIES
-                    <ul>
-                        <li>Room Service</li>
-                        <li>Restaurant</li>
-                        <li>Business center</li>
-                        <li>Fitness center</li>
-                        <li>Pool</li>
-                    </ul>
-                </p>
-                <p><h5>DESCRIPTION</h5>
-                    The lorem ipsum gets its name from the Latin phrase Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+                <h5>AMENITIES</h5>
+                <ul>
+                    <li>Room Service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                
+                <h5>DESCRIPTION</h5>
+                <p>The lorem ipsum gets its name from the Latin phrase Neque porro quisquam est qui dolorem ipsum quia dolor sit amet and andhr idsddhckdw dwekdkwj ncjwknjhdks dhjheksjdh hh sent amet.
+                    The hhsjhdwnsjnwk sdk name frome the latin phrase Nequejdl kke lorem.
                 </p>
             </div>  
         </div>
         
         <footer>
-                <div><br>
-                <a href="contact.html">Contact Us</a>
-                <div>
+
+            <a href="contact.html">Contact Us</a>
+            <div class="logo">
                 <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png"  alt="fb"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png"  alt="insta"></a>
                 <a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png"  alt="twitter"></a>
-              </div>
             </div>
-               <footer> &copy;2020 ROOM SEARCH PVT. LTD.</footer>
+            <p>&copy;2020 ROOM SEARCH PVT. LTD.</p>    
         </footer>
     </div>
     

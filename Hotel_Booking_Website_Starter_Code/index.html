@@ -5,36 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
-    <link href="styles\index.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/common.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
         <header>
-            <div>
-            <img src="assests/images/logo.png" alt="logo">
-            <a href="login.html">Login</a>
-        </div>
+            <nav>
+                <img src="assests/images/logo.png" alt="logo">
+                <div class="anchor">
+                    <a href="login.html">Login</a>
+                </div>
+            </nav>
         </header>
-        <div><form><input type="text" placeholder=" City"></form></div>
-            <div>
-            <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"  alt="image"></a>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"  alt="image2">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="image3">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"  alt="image4">
+        <div class="content">
+            <div class="searchbar">
+                <form>
+                    <input type="text" placeholder=" City">
+                </form>
             </div>
-           <p><a href="">View more >></a></p><br>
+            <div class="cards">
+                <div class="card">
+                    <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="image"  alt=""></a>
+                    <div class="mid">
+                        <div class="txt">Delhi</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="image"  alt="">
+                    <div class="mid">
+                        <div class="txt">Goa</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="image" alt="">
+                    <div class="mid">
+                        <div class="txt">Hyderabad</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="image" alt="">
+                    <div class="mid">
+                        <div class="txt">Kolkata</div>
+                    </div>
+                </div>
+            </div>
+            <p><a href="">View more >></a></p>
+        </div>
 
         <footer>
-            <div><br>
-            <a href="contact.html">Contact Us</a>
-            <div>
-            <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png"  alt="fb"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png"  alt="insta"></a>
-            <a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png"  alt="twitter"></a>
-        </div>
-        </div>
-        <footer>&copy;2020 ROOM SEARCH PVT. LTD.</footer>
+            
+                <a href="contact.html">Contact Us</a>
+                <div class="logo">
+                <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png"  alt="fb"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png"  alt="insta"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png"  alt="twitter"></a>
+                </div>
+                <p>&copy;2020 ROOM SEARCH PVT. LTD.</p>
+            
            
         </footer>
     </div>

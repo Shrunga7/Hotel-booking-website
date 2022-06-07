@@ -1,39 +1,8 @@
-html{
-    height: 100%;
-    width: 100%;
-    margin:0%;
-    font-family: 'Ubuntu', sans-serif;
-}
-body{
-    height: 100%;
-    width: 100%;
-    margin:0%;
-    background-color: #e0e0e0;
-}
-#container{
-    height: 100%;
-    width: 100%;
-
-}
-header{
-    background-color: rosybrown;
-    position:sticky; top:0px; left:0px; right:0px; overflow:hidden;
-
-}
-header img{
-    height:60px;
-    width:60px; 
-}
-header a:nth-of-type(2) {
-    text-decoration: none;
-    color: black; 
-    float: right;
-    margin:19.5px;
-} 
 ul{
     list-style: none;
     font-weight: bold;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 li a{
     text-decoration: none;
@@ -42,55 +11,35 @@ li a{
 }
 li{
     display:inline-block;
-    margin:0 20px;
+    margin:0px 20px;
 }
-#list-view a{
+#list-view .hotels{
+    display: flex;
+    flex-wrap: wrap;
+}
+#list-view .hotels a{
     text-decoration: none;
     color:black;
+    display: flex; 
 }
-
+#list-view .hotel .text{
+    margin-left: 3%;
+}
 #list-view img{
     height: 200px;
     width: 250px;
 
 }
-#list-view div{
-    margin: 2% 3% 2% 2%;
-    background-color: rgb(132,136,139);
+#list-view .hotels .hotel{
+    margin: 2% 3% 3% 2%;
+    background-color: lightgrey;
     width: 40%;
-    float:left;
-    display: table;  
+    display: flex; 
+    margin-left: 80px;
+    margin-right: 45px;
 
 }
 #map-view {
-      visibility:hidden; 
-      overflow: hidden;
+     display:none;
       
 }
-footer{
-    background-color: rosybrown;
-    position:sticky; bottom:0px; left:0px; right:0px; overflow: hidden;
-    padding-left: 10px;
-    padding-right:10px;
-    width: 1329px;
-    
-   
-
-    
-}
-footer img{
-    height:20px;
-    width: 22px;
-}
-footer div div{
-    float:right;
-}
-footer div a:nth-of-type(1){
-    text-decoration: none;
-    color:black;
-}
-footer footer{
-    text-align: center;
-    margin-bottom:0;
-}
-

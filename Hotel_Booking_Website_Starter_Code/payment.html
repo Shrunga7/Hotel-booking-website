@@ -5,48 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Payment</title>
-    <link href="styles\payment.css" rel="stylesheet">
+    <link href="styles/payment.css" rel="stylesheet">
+    <link href="styles/common.css" rel="stylesheet">
 </head>
 <body>
     <div id="container">
         <header>
-            <div>
-            <a href="index.html"> <img src="assests/images/logo.png" alt="logo" ></a>
-            <a href="login.html">Login</a>
-            </div>
+            <nav>
+                <img src="assests/images/logo.png" alt="logo">
+                <div class="anchor">
+                    <a href="login.html">Login</a>
+                </div>
+            </nav>
         </header>
-        <div>
+        <div class="content">
             <div id="hotels">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson"><br>
-            <h2>Radisson Blu Hotel</h2>
-            <P>#38 of 1289 hotels in New Delhi</P>
-            <p>National Highway 8, New Delhi 110017 India </p>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson">
+                <div class="text">
+                    <h2>Radisson Blu Hotel</h2>
+                    <P>#38 of 1289 hotels in New Delhi</P>
+                    <p>National Highway 8, New Delhi 110017 India </p>
+                </div>
             </div>
-            <div id="customerdetails">
-            <p><b>Name:</b> John Doe</p>
-            <p><b>Number of Adults:</b>2</p>
-            <p><b>Check-in Date:</b> 06/06/2020</p>
-            <p><b>Check-out Date:</b> 08/06/2020</p>
+            <div class=info>
+                <div id="customerdetails">
+                <p><b>Name:</b> John Doe</p>
+                <p><b>Number of Adults:</b>2</p>
+                <p><b>Check-in Date:</b> 06/06/2020</p>
+                <p><b>Check-out Date:</b> 08/06/2020</p>
+                </div>
+                <div id="tariff">
+                <p><b>Tariff Breakdown:</b> Rs.1000 x 2 Adults x 5 Nights</p>
+                <p><b>Total Amount:</b>Rs.1000</p>
+                </div>
+                <div id="paynow">
+                <p><a href="">Pay Now</a></p>
+                </div>
             </div>
-            <div id="tariff">
-            <p><b>Tariff Breakdown:</b> Rs.1000 x 2 Adults x 5 Nights</p>
-            <p><b>Total Amount:</b>Rs.1000</p>
-            </div>
-            <a href="">Pay Now</a>
-            <br><br><br>
         </div>
+        
 
         <footer>
-                <div><br>
-                <a href="contact.html">Contact Us</a>
-                <div>
+
+            <a href="contact.html">Contact Us</a>
+            <div class="logo">
                 <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png"  alt="fb"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png"  alt="insta"></a>
                 <a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png"  alt="twitter"></a>
-              </div>
             </div>
-               <footer> &copy;2020 ROOM SEARCH PVT. LTD.</footer>
+            <p>&copy;2020 ROOM SEARCH PVT. LTD.</p>    
         </footer>
+    </div>
     
 </body>
 </html>
