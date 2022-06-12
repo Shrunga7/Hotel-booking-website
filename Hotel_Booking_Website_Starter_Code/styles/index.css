@@ -6,10 +6,12 @@ div .searchbar {
     background-size: cover;
     height:380px;
     display:flex; 
+    
+    
 }
 form{
     margin: auto;
-       
+          
 }
  div form input{
     background-color:#f1f1f1;
@@ -17,7 +19,7 @@ form{
     padding:10px;
     font-size: 16px;
     border-radius: 12px;
-    width: 100%;
+    /* width: 100%; */
     border: none;
     outline: none;
 }
@@ -30,7 +32,7 @@ div .cards{
     justify-content: space-evenly;
 
 }
-.cards .card{
+.cards .cardaa{
     position: relative;
     display: flex;
     align-items: center;
@@ -38,13 +40,13 @@ div .cards{
     padding: 4%;
 
 }
-.cards .card img{
+.cards .cardaa img{
     display: block;
     border-radius:25%;
     height: 150px;
     width: 150px;
 }
-.cards .card .mid{
+.cards .cardaa .mid{
     position: absolute; 
     opacity: -1;
     margin: auto;
@@ -54,20 +56,22 @@ div .cards{
     color:#f1f1f1;
     margin:auto;
 }
-.cards .card:hover .mid{
+.cards .cardaa:hover .mid{
     opacity: 1;
 }
-.cards .card:hover .image{
-     filter:brightness(50%); 
-     background-color: rgba(0, 0, 0, 0.5);
+.cards .cardaa:hover .image{
+     filter: brightness(50%); 
+      
     
 }
-.cards .card .image{
+.cards .cardaa .image{
     box-shadow: 10px 10px 10px grey;
 }
-div + p{
+.viewmore{
     text-align: center;
+    margin-bottom: 3%;
 }
+
 div + p a{
     text-decoration: none;
     color:black;

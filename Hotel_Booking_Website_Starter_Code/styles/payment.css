@@ -17,7 +17,7 @@ div#hotels{
     background-color: rgb(132,136,139);
     width:50%;
     height:270px;
-    margin: 2% auto 2% auto;
+    margin: 5% auto 2% auto;
     
 }
 .info{
@@ -31,17 +31,7 @@ div#hotels{
    align-items: center;
    margin-bottom: 2%;
   
-
 }
-/* div#customerdetails{
-    margin: 2%; 
+.info p b{
+    font-family: cursive;
 }
-div#tariff{
-    margin:2%;
-   border: 1px solid transparent;
-   border-radius: 5px;
-   padding:1% 2% 1% 2%; 
-}
-div#paynow{
-     margin:2%; 
-} */
