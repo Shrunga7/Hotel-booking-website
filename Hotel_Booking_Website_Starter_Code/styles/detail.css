@@ -12,8 +12,7 @@
     margin-left: 2%;
     margin-right: -1px;
 }
-.hotel-img img{
-   
+img {
     height: 350px;
     width:500px; 
      /* margin: 2% 4% 0% 4%; */
@@ -69,7 +68,18 @@ form p{
     align-items: center;
    
 }
-
+.checked{
+    color: orange;
+}
+.close{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    
+}
+.close:hover{
+    font-weight: 700;
+}
 
 
 

@@ -63,3 +63,6 @@ li{
 #map-view {
      /* display:none;  */
 }
+.checked{
+    color: orange;
+}
