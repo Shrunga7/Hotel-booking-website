@@ -52,22 +52,22 @@ div .cards{
     margin: auto;
     
 }
-.mid .txt{
+.mid .txt {
     color:#f1f1f1;
     margin:auto;
 }
-.cards .cardaa:hover .mid{
+.cards .cardaa:hover .mid {
     opacity: 1;
 }
-.cards .cardaa:hover .image{
+.cards .cardaa:hover .image {
      filter: brightness(50%); 
       
     
 }
-.cards .cardaa .image{
+.cards .cardaa .image {
     box-shadow: 10px 10px 10px grey;
 }
-.viewmore{
+.viewmore {
     text-align: center;
     margin-bottom: 3%;
 }
@@ -75,5 +75,23 @@ div .cards{
 div + p a{
     text-decoration: none;
     color:black;
+
+}
+
+@media screen and (max-device-width: 576px) {
+    div .searchbar {
+        display:flex; 
+    }
+    div .cards{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    
+    }
+    .viewmore {
+        margin-bottom: 10%;
+        margin-top: 3%;
+    }
 
 }

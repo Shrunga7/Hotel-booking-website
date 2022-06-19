@@ -3,16 +3,20 @@ html {
     width: 100%;
     margin: 0%;
     font-family: 'Ubuntu', sans-serif;
+    background-color: #e0e0e0;
+    
 }
 body {
     height: 100%;
     width: 100%;
     margin: 0%;
-    background-color: #e0e0e0;
+    
 }
 #container {
     height: 100%;
     width: 100%;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
 }
 header {
     background-color: rosybrown;
@@ -21,6 +25,7 @@ header {
     left: 0px;
     right: 0px;
     overflow: hidden;
+    z-index: 5; /* to avoid overflow of the images on the header while scrolling*/
     /* display: flex;
     align-items: center; */
 }
@@ -52,6 +57,7 @@ footer{
     left: 0px;
     right: 0px;
     
+    
 }
 footer .foot {
     /* background-color: rosybrown; */
@@ -62,7 +68,7 @@ footer .foot {
     /* overflow: hidden; */
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 60px;
     
 }
 
@@ -92,6 +98,65 @@ footer .contacts {
     /* display: flex;
 align-items: center; */
     margin-left: 2%;
+}
+@media screen and (max-device-width: 576px){
+    header {
+        background-color: rosybrown;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        overflow: hidden;
+        z-index: 5;
+        
+        /* display: flex;
+        align-items: center; */
+    }
+    footer {
+        background-color: rosybrown;
+        position: sticky;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;    
+    }
+    footer .foot{
+        display: flex;
+        align-items: center;
+        height: 50px;
+
+    }
+
+    footer .contacts{
+        margin-left: 2%;
+
+    }
+    footer .copyright {
+        display: flex;
+        justify-content: center;
+        left: 34%;
+        position: absolute;
+        font-size: 10px;
+    }
+    footer .logo {
+        display: flex;
+        position: absolute;
+        right: 2px;
+        margin-right: 2%;
+    }
+    .modal-body div {
+        display: flex;
+        margin-bottom: 3px;
+    }
+    .modal-body div label {
+       margin: 0 5%;
+    }
+    .modal-body div input {
+        width:40%;
+    }
+
 }
 
         

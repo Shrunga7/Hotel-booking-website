@@ -41,7 +41,11 @@ li{
     display: flex; 
 }
 #list-view .hotel .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     margin-left: 3%;
+    
 }
 #list-view img{
     height: 200px;
@@ -53,7 +57,7 @@ li{
     background-color: lightgrey;
     width: 40%;
     display: flex; 
-    margin-left: 80px;
+    margin-left: 75px;
     margin-right: 45px;
 
 }
@@ -61,8 +65,11 @@ li{
     background-color: rosybrown;
 }
 #map-view {
-     /* display:none;  */
+      /* display:none;   */
 }
 .checked{
     color: orange;
 }
+/* @media screen and (max-device-width: 576px) {
+
+} */
