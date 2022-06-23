@@ -70,6 +70,72 @@ li{
 .checked{
     color: orange;
 }
-/* @media screen and (max-device-width: 576px) {
+@media screen and (max-device-width: 576px) {
+    ul{
+        margin-right:15px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    li{
+        display:inline-block;
+        /* margin:5px 20px; */
+        text-align: center;
+        margin-top:2%;
+       
+    }
+    #list-view .hotels {
+        display: grid;
+        flex-wrap: wrap; 
+        justify-content: center;   
+    }
+    #list-view .hotels a{
+        display: grid;
+        flex-wrap: wrap;    
+    }
+    #list-view .hotel .text{
+        display: flex;
+    }
+    #list-view img{
+        width: 300px;
+        display: grid;
+        
+    }
+    #list-view .hotels .hotel{
 
-} */
+        width: 300px;
+        display: grid; 
+        justify-content: center;
+        /* margin-left: 45px;
+        margin-right: 45px; */
+        margin:5px 25px
+       
+    
+    }
+    #map-view img{
+        width:100%;
+    }
+
+}
+@media screen and (min-device-width: 576px) and (max-device-width: 768px){
+    #list-view .hotels .hotel{
+        margin: 2% 3% 3% 2%;
+        background-color: lightgrey;
+        width: 100%;
+        display: flex; 
+        margin-left: 75px;
+        margin-right: 45px;
+    
+    }
+    #list-view .hotel .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top:3%;
+        margin-left: 3%;
+        
+    }
+    #map-view img{
+        width:100%;
+    }
+}
