@@ -26,10 +26,14 @@ form{
 div .cards{
     /* margin-left: 15%;
     margin-right: 15%; */
-    display: flex;
+    /* display: flex; */
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 60px 150px;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly;  */
 
 }
 .cards .cardaa{
@@ -40,13 +44,13 @@ div .cards{
     padding: 4%;
 
 }
-.cards .cardaa img{
+img{
     display: block;
     border-radius:25%;
     height: 150px;
     width: 150px;
 }
-.cards .cardaa .mid{
+.mid{
     position: absolute; 
     opacity: -1;
     margin: auto;
