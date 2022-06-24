@@ -18,9 +18,10 @@
     <div id="container">
         <header>
             <nav>
-                <a href="index.html"><img src="assests/images/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="assests/images/logo.png" alt="logo"/></a>
                 <div class="anchor">
-                    <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button type="button" id="loginbtn" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-light btn-sm" id="logoutbtn" onclick="logout()">LOGOUT</button>
                 </div>
             </nav>
         </header>
@@ -55,28 +56,28 @@
                 <div class="hotel-detail">
                     <form action="payment.html" method="GET" autocomplete="off">
                         <p>
-                            <label>Adults:</label>
-                            <input type="number" name="adult" min="1" required="Value must be greater than or equal to 1">
+                            <label for="numadult">Adults:</label>
+                            <input id="numadult" type="number" name="numadult" min="1" onchange="calculator()" required="Value must be greater than or equal to 1">
                         </p>
                         <p>
                             <label>Name:</label>
                             <input type="text" name="name" required>
                         </p>
                         <p>
-                            <label>From Date:</label>
-                            <input type="date" name="fromdate" required>
+                            <label for="fromdate">From Date:</label>
+                            <input type="date" id="fromdate" name="fromdate" onchange="calculator()" required>
                         </p>
                         <p>
-                            <label>To Date:</label>
-                            <input type="date" name="todate" required>
+                            <label for="todate">To Date:</label>
+                            <input type="date" id="todate" name="todate" onchange="calculator()" required>
                         </p>
                         <p>
-                            <label>Total:</label>
-                            <input type="text" name="price" readonly>
+                            <label for="price">Total:</label>
+                            <input type="text" id="price" name="price" readonly>
                         </p>
                         <p class="booknow">
                             <!-- <label></label> -->
-                            <button class="btn btn-success">Book Now</button>
+                            <a href="payment.html" type="button" class="btn btn-success">Book Now</button></a>
                         </p> 
                         </form>
                 <!-- </div> -->
@@ -132,16 +133,16 @@
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label class="mx-5">Username:</label>
-                        <input type="text" placeholder="Enter Username" required autocomplete="on">
+                        <label class="mx-5" for="uname">Username:</label>
+                        <input type="text" id="uname" placeholder="Enter Username" required autocomplete="on">
                     </div>
                     <div class="mb-3">
-                        <label class="mx-5">Password:</label>
-                        <input class="ml-1" type="text" placeholder="Enter Password" required autocomplete="off">
+                        <label class="mx-5" for="pass">Password:</label>
+                        <input class="ml-1" id="pass" type="text" placeholder="Enter Password" required autocomplete="off">
                     </div>
                 </div>
                 <div class="modal-footer text-center">
-                       <div class="col-md-12 text-center"><button type="button" class="btn btn-primary">Login</button></div> 
+                       <div class="col-md-12 text-center"><button type="button" class="btn btn-primary" onclick="login()">Login</button></div> 
                 </div>
             </div>
         </div>
@@ -169,7 +170,8 @@
             </div>
         </div>
     </div>
-
+    <script src="scripts/common.js"></script>
+    <script src="scripts/detail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     

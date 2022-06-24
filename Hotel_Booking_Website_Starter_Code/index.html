@@ -14,21 +14,22 @@
 
 <body>
     <div id="container">
-        <header>
-            <nav>
-                <img src="assests/images/logo.png" alt="logo">
-                <div class="anchor">
-                    <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-                </div>
-            </nav>
-        </header>
+            <header>
+                <nav>
+                    <img src="assests/images/logo.png" alt="logo"/>
+                    <div class="anchor">
+                        <button type="button" id="loginbtn" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                        <button type="button" class="btn btn-light btn-sm" id="logoutbtn" onclick="logout()">LOGOUT</button>
+                    </div>
+                </nav>
+            </header>     
         <div class="content">
             <div class="searchbar">
                 <form>
                     <input type="text" placeholder=" City">
                 </form>
             </div>
-            <div class="cards">
+            <div class="cards" id="firstcard">
                 <div class="cardaa">
                     <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="image" alt=""></a>
                     <div class="mid">
@@ -53,6 +54,8 @@
                         <div class="txt">Kolkata</div>
                     </div>
                 </div>
+            </div>
+            <div class="cards" id="secondcard" style="display: none;">
                 <div class="cardaa">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" class="image" alt="">
                     <div class="mid">
@@ -79,7 +82,11 @@
                 </div>
             </div>
             <!-- <p><a href="">View more ></a></p> -->
-            <div class="viewmore"><a class="btn btn-secondary" href="" role="button">View more</a></div>
+            <div class="viewmore">
+                <a class="btn btn-secondary" href="#secondcard" role="button" id="morebtn" onclick="viewmore()">View more</a>
+                <a href="#firstcard" class="btn btn-secondary" id="lessbtn" style="display: none;" onclick="viewless()">View Less</a>
+
+            </div>
             <!-- <button type="button" class="btn btn-secondary" data-href="index.html">View more</button> -->
         </div>
     
@@ -110,16 +117,16 @@
                     </div>
                     <div class="modal-body">
                         <div class="mb-3">
-                            <label class="mx-5">Username:</label>
-                            <input type="text" placeholder="Enter Username" required autocomplete="on">
+                            <label class="mx-5" for="uname">Username:</label>
+                            <input type="text" id="uname" placeholder="Enter Username" required autocomplete="on">
                         </div>
                         <div class="mb-3">
-                            <label class="mx-5">Password:</label>
-                            <input class="ml-1" type="text" placeholder="Enter Password" required autocomplete="off">
+                            <label class="mx-5" for="pass">Password:</label>
+                            <input class="ml-1" id="pass" type="text" placeholder="Enter Password" required autocomplete="off">
                         </div>
                     </div>
                     <div class="modal-footer text-center">
-                           <div class="col-md-12 text-center"><button type="button" class="btn btn-primary">Login</button></div> 
+                           <div class="col-md-12 text-center"><button type="button" class="btn btn-primary" onclick="login()">Login</button></div> 
                     </div>
                 </div>
             </div>
@@ -149,6 +156,8 @@
             </div>
         </div>
     </div>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
     

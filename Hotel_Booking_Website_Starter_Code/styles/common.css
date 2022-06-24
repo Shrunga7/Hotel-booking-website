@@ -99,6 +99,9 @@ footer .contacts {
 align-items: center; */
     margin-left: 2%;
 }
+#logoutbtn {
+    display: none;
+}
 @media screen and (max-device-width: 576px){
     header {
         background-color: rosybrown;
